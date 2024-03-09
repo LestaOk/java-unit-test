@@ -6,7 +6,7 @@ public class CheckIsAdultTest {
 
   public CheckIsAdultTest(int age, boolean result) {
 	this.age = age;
-    this.result = result;  
+    	this.result = result;  
   }
 
   @Parameterized.Parameters
@@ -22,9 +22,7 @@ public class CheckIsAdultTest {
   @Test
   public void checkIsAdultWhenAgeThenResult() {
 	Program program = new Program();
-	//... // Передай сюда возраст пользователя
-    boolean isAdult = program.checkIsAdult(age);
-	// Сравни полученный и ожидаемый результаты, не забудь про сообщение об ошибке
-    assertEquals("Ошибка при проверке на совершеннолетие", result, isAdult);
+    	boolean isAdult = program.checkIsAdult(age);
+    	assertEquals("Ошибка при проверке на совершеннолетие", result, isAdult);
 	}
 }
